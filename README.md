@@ -24,6 +24,4 @@ Welcome to my **Portfolio Website** — a personal space to showcase my skills, 
 git clone https://github.com/mehuld02/my_portfolio.git
 cd portfolio
 
-📄 License
-This project is open source and available under the MIT License.
 
