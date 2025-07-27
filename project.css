@@ -1,0 +1,96 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0c1022;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      gap: 10px;
+    }
+
+    .tabs button {
+      background: #eee;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .tabs button.active, .tabs button:hover {
+      background: #333;
+      color: white;
+    }
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  width: 300px; /* Fixed width */
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .project-info h3 {
+      color: #5c5c5c;
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .project-info p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .project-info a {
+      color: white;
+      background: #007bff;
+      padding: 8px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .project-info a:hover {
+      background: #0056b3;
+    }

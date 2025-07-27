@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Portfolio</a>
+
+    <nav class="navbar">
+      <a href="index.html" style="--i:1;" >Home</a>
+      <a href="about.html" style="--i:2;" >About</a>
+      <a href="skills.html" style="--i:3;">Skills</a>
+      <a href="#" style="--i:4;" class="active">Projects</a>
+      <a href="experience.html" style="--i:5;">Experience</a>
+      <a href="contact.html" style="--i:6;">Contact</a>
+      
+    </nav>
+  </header>
+  <div class="container">
+    <h1 class="section-title">My Projects</h1>
+
+    <div class="tabs">
+      <button class="active" onclick="filterProjects(event, 'all')">All</button>
+      <button onclick="filterProjects(event, 'html')">HTML/CSS</button>
+      <button onclick="filterProjects(event, 'js')">JavaScript</button>
+      <button onclick="filterProjects(event, 'react')">React</button>
+      <button onclick="filterProjects(event, 'mern')">MERN</button>
+    </div>
+
+    <div class="projects-grid" id="projectGrid">
+      <div class="project-card" data-category="react">
+        <img src="images/Screenshot 2025-07-27 154723.png" alt="Amazon Clone">
+        <div class="project-info">
+          <h3>Youtube Clone</h3>
+          <p>React</p>
+          <a href="https://github.com/mehuld02/Youtube-Clone.git">View</a>
+        </div>
+      </div>
+
+       <div class="project-card" data-category="react">
+        <img src="images/Screenshot 2025-07-25 185236.png" alt="Landing Page">
+        <div class="project-info">
+          <h3>Gemini Clone</h3>
+          <p>React</p>
+          <a href="https://github.com/mehuld02/Gemini-Clone.git">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="react">
+        <img src="images/Screenshot 2025-07-27 214125.png" alt="Landing Page">
+        <div class="project-info">
+          <h3>Algorithm Visualizor</h3>
+          <p>React</p>
+          <a href="https://github.com/mehuld02/Algorithm-Visualizor.git">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="mern">
+        <img src="images/Screenshot 2025-07-27 212729.png" alt="">
+        <div class="project-info">
+          <h3>Chat App</h3>
+          <p>MERN</p>
+          <a href="https://github.com/mehuld02/Realtime-Chat-App.git">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="mern">
+        <img src="images/Screenshot 2025-07-27 212810.png" alt="">
+        <div class="project-info">
+          <h3>Virtual Assistant</h3>
+          <p>MERN</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="mern">
+        <img src="images/Screenshot 2025-07-27 212927.png" alt="">
+        <div class="project-info">
+          <h3>Food Ordering Website</h3>
+          <p>MERN</p>
+          <a href="https://github.com/mehuld02/MERN-stack-food-Delivery-App.git">View</a>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectGrid">
+      <div class="project-card" data-category="react">
+        <img src="images/Screenshot 2025-07-27 154811.png" alt="Amazon Clone">
+        <div class="project-info">
+          <h3>Netflix Clone</h3>
+          <p>React</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="html">
+        <img src="images/Screenshot 2025-07-27 214017.png" alt="Amazon Clone">
+        <div class="project-info">
+          <h3>Plumbingbazzar</h3>
+          <p>React</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="html">
+        <img src="images/Screenshot 2025-07-23 150354.png" alt="">
+        <div class="project-info">
+          <h3>Wedding Website</h3>
+          <p>HTML/CSS</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+
+      <div class="project-card" data-category="html">
+        <img src="images/amz.clone.png" alt="Amazon Clone">
+        <div class="project-info">
+          <h3>Amazon Clone</h3>
+          <p>HTML/CSS</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+
+      <div class="project-card" data-category="js">
+        <img src="images/TC.png" alt="Temperature Converter">
+        <div class="project-info">
+          <h3>Temperature Converter</h3>
+          <p>JavaScript</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <img src="images/Screenshot 2025-07-27 213658.png" alt="">
+        <div class="project-info">
+          <h3>Digital Clock</h3>
+          <p>JavaScript</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <img src="images/Screenshot 2025-07-27 213721.png" alt="">
+        <div class="project-info">
+          <h3>Calculator</h3>
+          <p>JavaScript</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="html">
+        <img src="images/image.png" alt="Landing Page">
+        <div class="project-info">
+          <h3>Landing Page</h3>
+          <p>HTML/CSS</p>
+          <a href="#">View</a>
+        </div>
+      </div>
+
+       <div class="project-card" data-category="js">
+        <img src="images/Screenshot 2025-07-27 214217.png" alt="Landing Page">
+        <div class="project-info">
+          <h3>E-commerce Website</h3>
+          <p>JavaScript</p>
+          <a href="https://github.com/mehuld02/E-commerce-website.git">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function filterProjects(event, category) {
+      const buttons = document.querySelectorAll('.tabs button');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.removeProperty('display'); // Allow grid to layout naturally
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
