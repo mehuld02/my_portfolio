@@ -94,3 +94,47 @@
     .project-info a:hover {
       background: #0056b3;
     }
+
+    /* Hamburger hidden by default */
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 101;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block; /* Show only on mobile */
+  }
+
+  /* Navbar hidden by default on mobile */
+  .navbar {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 220px;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    background: rgba(12,16,34,0.95);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s ease;
+    z-index: 100;
+  }
+
+  /* Navbar active state when hamburger is clicked */
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+  }
+}

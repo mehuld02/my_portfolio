@@ -15,6 +15,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="portfolio.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
    
 </head>
@@ -22,7 +23,8 @@
 
   <!-- Header / Navbar -->
   <header class="header">
-    <a href="index.html" class="logo"> Portfolio</a>
+    <a href="#" class="logo">Mehul<span>.</span></a>
+    <div class="menu-btn"><i class='bx bx-menu'></i></div>
     <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -36,36 +38,47 @@
   <!-- Contact Form Section -->
   <div class="contactform">
     <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-    <form>
-      <div class="mb-3">
-        <label for="clientname" class="form-label">Name</label>
-        <input type="text" class="form-control" id="clientname" placeholder="Enter your name" required>
-      </div>
+    <form action="https://api.web3forms.com/submit" method="POST">
+  
+  <input type="hidden" name="access_key" value="a0142a70-510c-4e32-ab24-f670ebcacc96">
 
-      <div class="mb-3">
-        <label for="clientemail" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="clientemail" placeholder="example@mail.com" required>
-        <div id="emailHelp" class="form-text">I'll never share your email and phone with anyone else.</div>
-      </div>
-
-      <div class="mb-3">
-        <label for="clientphone" class="form-label">Phone</label>
-        <input type="tel" class="form-control" id="clientphone" placeholder="e.g. +91 98765XXXXX">
-      </div>
-
-      <div class="mb-3">
-        <label for="clientenquiry" class="form-label">Enquiry</label>
-        <input type="text" class="form-control" id="clientenquiry" placeholder="How can I help you?" required>
-      </div>
-
-      <div class="mb-3" id="form-check">
-        <input type="checkbox" class="form-check-input" id="isclient">
-        <label class="form-check-label" for="isclient">I want you to work on a project with me.</label>
-      </div>
-
-      <button type="submit" class="btn1">Submit</button>
-    </form>
+  <div class="mb-3">
+    <label for="clientname" class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" id="clientname" placeholder="Enter your name" required>
   </div>
 
+  <div class="mb-3">
+    <label for="clientemail" class="form-label">Email Address</label>
+    <input type="email" name="email" class="form-control" id="clientemail" placeholder="example@mail.com" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="clientphone" class="form-label">Phone</label>
+    <input type="tel" name="phone" class="form-control" id="clientphone" placeholder="e.g. +91 98765XXXXX">
+  </div>
+
+   <div class="mb-3">
+    <label for="clientmessage" class="form-label">Your Message</label>
+    <textarea name="message" class="form-control" id="clientmessage" rows="5" placeholder="Write your message here..." required></textarea>
+  </div>
+
+  <div class="mb-3" id="form-check">
+    <input type="checkbox" name="project_request" class="form-check-input" id="isclient">
+    <label class="form-check-label" for="isclient">I want you to work on a project with me.</label>
+  </div>
+
+  <button type="submit" class="btn1">Submit</button>
+</form>
+
+  </div>
+ <script>
+  const menuBtn = document.querySelector(".menu-btn");
+  const navbar = document.querySelector(".navbar");
+
+  menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    menuBtn.classList.toggle("active");
+  });
+</script>
 </body>
 </html>

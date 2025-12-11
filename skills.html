@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Skills & Abilities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <link rel="stylesheet" href="skills.css">
   <link rel="stylesheet" href="portfolio.css">
+  
   
 </head>
 <body>
   <header class="header">
-    <a href="index.html" class="logo">Portfolio</a>
+    <a href="#" class="logo">Mehul<span>.</span></a>
+    
+    <div class="menu-btn"><i class='bx bx-menu'></i></div>
 
     <nav class="navbar">
       <a href="index.html" style="--i:1;" >Home</a>
@@ -103,5 +109,16 @@
       </div>
     </div>
   </div>
+
+   <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const navbar = document.querySelector(".navbar");
+
+    menuBtn.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+      menuBtn.classList.toggle("active");
+    });
+  </script>
+</script>
 </body>
 </html>
